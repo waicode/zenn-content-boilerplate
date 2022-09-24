@@ -1,0 +1,12 @@
+{
+  "table": {
+    "prefix": "table",
+    "body": [
+      "| header1 | header2 | header3 |",
+      "| ------- | ------- | ------- |",
+      "|         |         |         |",
+      "|         |         |         |"
+    ],
+    "description": "テーブル（Markdown形式）"
+  }
+}

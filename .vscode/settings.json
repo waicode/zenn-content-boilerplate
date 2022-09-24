@@ -1,0 +1,12 @@
+{
+  "markdownlint.config": {
+    "line-length": {
+      // MD013: 1文の最大文字数を調整
+      "line_length": 120
+    },
+    "no-duplicate-heading": false, // MD024: 見出しテキストの重複を許容
+    "no-trailing-punctuation": false, // MD026: 見出しに.,;:が入ることを許容
+    "no-inline-html": false, // MD033: HTML記述を許容
+    "no-bare-urls": false // MD034: URLそのままの表記を許容
+  }
+}

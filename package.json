@@ -1,7 +1,10 @@
 {
   "name": "zenndocc",
   "version": "1.0.0",
-  "description": "waicode zenn articles",
+  "description": "waicode zenn documents",
   "repository": "https://github.com/waicode/zenndocc.git",
-  "author": "waicode <waicode37@gmail.com>"
+  "author": "waicode",
+  "devDependencies": {
+    "zenn-cli": "^0.1.125"
+  }
 }
