@@ -1,0 +1,16 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "allowCompoundWords": true,
+  "words": ["Zenn"],
+  "ignorePaths": [
+    ".vscode",
+    ".devcontainer",
+    ".git",
+    "node_modules",
+    "package.json",
+    "yarn.lock",
+    ".history",
+    ".cspell.json"
+  ]
+}
