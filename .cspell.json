@@ -2,7 +2,10 @@
   "version": "0.2",
   "language": "en",
   "allowCompoundWords": true,
-  "words": ["Zenn"],
+  "words": [
+    "Zenn",
+    "zenndocc"
+  ],
   "ignorePaths": [
     ".vscode",
     ".devcontainer",
