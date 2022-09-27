@@ -1,0 +1,28 @@
+{
+  "recommendations": [
+    "negokaz.zenn-editor",
+    "gruntfuggly.todo-tree",
+    "esbenp.prettier-vscode",
+    "christian-kohler.path-intellisense",
+    "mushan.vscode-paste-image",
+    "ibm.output-colorizer",
+    "davidanson.vscode-markdownlint",
+    "yzhang.markdown-all-in-one",
+    "ms-ceintl.vscode-language-pack-ja",
+    "visualstudioexptteam.vscodeintellicode",
+    "jsynowiec.vscode-insertdatestring",
+    "bradgashler.htmltagwrap",
+    "eamodio.gitlens",
+    "codezombiech.gitignore",
+    "github.vscode-pull-request-github",
+    "mhutchie.git-graph",
+    "dbaeumer.vscode-eslint",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode-remote.remote-containers",
+    "nemesv.copy-file-name",
+    "streetsidesoftware.code-spell-checker",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "bierner.emojisense"
+  ]
+}
