@@ -1,12 +1,17 @@
 {
+  "workbench.colorCustomizations": {
+    "editor.background": "#fff",
+    "statusBar.background": "#0d83fd",
+    "sideBar.background": "#EDF2F7"
+  },
   "markdownlint.config": {
     "line-length": {
-      // MD013: 1文の最大文字数を調整
+      // MD013: Adjust the maximum number of characters per sentence
       "line_length": 120
     },
-    "no-duplicate-heading": false, // MD024: 見出しテキストの重複を許容
-    "no-trailing-punctuation": false, // MD026: 見出しに.,;:が入ることを許容
-    "no-inline-html": false, // MD033: HTML記述を許容
-    "no-bare-urls": false // MD034: URLそのままの表記を許容
+    "no-duplicate-heading": false, // MD024: Allow duplicate heading text
+    "no-trailing-punctuation": false, // MD026: Allow headings with . ,;:
+    "no-inline-html": false, // MD033: Allow HTML description
+    "no-bare-urls": false // MD034: Allow URLs to be written as is
   }
 }

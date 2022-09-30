@@ -1,5 +1,8 @@
 {
-  "recommendations": [
+  "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+  "service": "zenn",
+  "workspaceFolder": "/workspace",
+  "extensions": [
     ////
     /// Zenn
     //

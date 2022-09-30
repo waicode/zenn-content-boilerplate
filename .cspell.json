@@ -2,18 +2,16 @@
   "version": "0.2",
   "language": "en",
   "allowCompoundWords": true,
-  "words": [
-    "Zenn",
-    "zenndocc"
-  ],
+  "words": ["zenn"],
   "ignorePaths": [
     ".vscode",
     ".devcontainer",
     ".git",
+    ".history",
+    ".cspell.json",
     "node_modules",
     "package.json",
-    "yarn.lock",
-    ".history",
-    ".cspell.json"
+    "package-lock.json",
+    "yarn.lock"
   ]
 }

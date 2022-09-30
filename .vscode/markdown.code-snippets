@@ -2,11 +2,66 @@
   "table": {
     "prefix": "table",
     "body": [
-      "| header1 | header2 | header3 |",
-      "| ------- | ------- | ------- |",
-      "|         |         |         |",
-      "|         |         |         |"
+      "| Head | Head | Head |",
+      "| ---- | ---- | ---- |",
+      "| Text | Text | Text |",
+      "| Text | Text | Text |"
     ],
-    "description": "テーブル（Markdown形式）"
+    "description": "Table（Markdown）"
+  },
+  "codeBlock": {
+    "prefix": "code-block",
+    "body": ["```ts:file-name.ts", "", "", "```"],
+    "description": "Code block（Markdown）"
+  },
+  "codeBlockDiff": {
+    "prefix": "code-block-diff",
+    "body": ["```diff ts:file-name.ts", "", "", "```"],
+    "description": "Code block diff（Markdown）"
+  },
+  "blockquote": {
+    "prefix": "blockquote",
+    "body": ["> ", "> ", "> "],
+    "description": "blockquote（Markdown）"
+  },
+  "footnote": {
+    "prefix": "footnote",
+    "body": ["[^1]: Footnote1"],
+    "description": "Footnote（Markdown）"
+  },
+  "footnoteInline": {
+    "prefix": "footnote-inline",
+    "body": ["^[Footnote text]"],
+    "description": "Footnote inline（Markdown）"
+  },
+  "hr": {
+    "prefix": "hr",
+    "body": ["-----"],
+    "description": "Separator line（Markdown）"
+  },
+  "comment": {
+    "prefix": "comment",
+    "body": ["<!-- Comment -->"],
+    "description": "Inline comment（Markdown）"
+  },
+  "mermaid": {
+    "prefix": "mermaid",
+    "body": ["```mermaid", "flowchart LR", "    A-->B", "```"],
+    "description": "Mermaid（Markdown）"
+  },
+  "zennMessage": {
+    "prefix": "zenn-message",
+    "body": [":::message", "Leave a message here.", ":::"],
+    "description": "Message（Zenn）"
+  },
+  "zennMessageAlert": {
+    "prefix": "zenn-message-alert",
+    "body": [":::message alert", "Leave a alert message here.", ":::"],
+    "description": "Alert message（Zenn）"
+  },
+  "zennDetails": {
+    "prefix": "zenn-details",
+    "body": [":::details", "Leave a message here.", ":::"],
+    "description": "Details（Zenn）"
   }
 }
