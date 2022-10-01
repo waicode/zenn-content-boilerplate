@@ -1,5 +1,6 @@
 {
   "workbench.colorCustomizations": {
+    // Zenn theme
     "editor.background": "#fff",
     "statusBar.background": "#0d83fd",
     "sideBar.background": "#EDF2F7"
