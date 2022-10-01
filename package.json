@@ -6,10 +6,22 @@
   "repository": "https://github.com/waicode/zenn-content-boilerplate.git",
   "author": "waicode",
   "scripts": {
-    "preview": "npx zenn preview"
+    "preview": "npx zenn preview",
+    "article": "npx zenn new:article",
+    "book": "npx zenn new:book",
+    "update": "yarn add -D zenn-cli@latest",
+    "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
+    "lint:prettier": "prettier --ignore-path .prettierignore --check .",
+    "lint:cspell": "cspell \"**\" .",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "zenn-cli": "^0.1.125"
+    "cspell": "^6.12.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "markdownlint-cli2": "^0.5.1",
+    "prettier": "^2.7.1",
+    "zenn-cli": "^0.1.128"
   },
   "license": "MIT"
 }
