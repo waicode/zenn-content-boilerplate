@@ -1,0 +1,66 @@
+{
+  "plugins": {
+    "@textlint/markdown": {
+      "extensions": [
+        ".md"
+      ]
+    }
+  },
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "prh": {
+      "rulePaths": [
+        "./prh/index.yml"
+      ]
+    },
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        "max": 150
+      },
+      "no-exclamation-question-mark": {
+        "allowFullWidthExclamation": true,
+        "allowFullWidthQuestion": true
+      },
+      "ja-no-successive-word": false,
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": [
+          ":",
+          "："
+        ]
+      },
+      "no-doubled-joshi": {
+        "strict": false,
+        "allow": [
+          "も",
+          "や",
+          "か"
+        ],
+        "separatorCharacters": [
+          ",",
+          "，",
+          "、",
+          ".",
+          "．",
+          "。",
+          "?",
+          "!",
+          "？",
+          "！",
+          "「",
+          "」",
+          "\"",
+          "”",
+          "“"
+        ]
+      }
+    },
+    "preset-ja-spacing": {
+      "ja-space-around-code": {
+        "before": true,
+        "after": true
+      }
+    }
+  }
+}
