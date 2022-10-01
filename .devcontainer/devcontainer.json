@@ -4,14 +4,6 @@
   "workspaceFolder": "/workspace",
   "extensions": [
     ////
-    /// Zenn
-    //
-
-    // Zenn Editor
-    // https://marketplace.visualstudio.com/items?itemName=negokaz.zenn-editor
-    "negokaz.zenn-editor",
-
-    ////
     ///  Writing(Markdown, HTML)
     //
 
@@ -35,33 +27,13 @@
     // https://marketplace.visualstudio.com/items?itemName=nemesv.copy-file-name
     "nemesv.copy-file-name",
 
-    // htmltagwrap
-    // https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap
-    "bradgashler.htmltagwrap",
-
-    // Auto Rename Tag
-    // https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
-    "formulahendry.auto-rename-tag",
-
-    // Auto Close Tag
-    // https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
-    "formulahendry.auto-close-tag",
-
     // Path Intellisense
     // https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
     "christian-kohler.path-intellisense",
 
-    // IntelliCode
-    // https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode
-    "visualstudioexptteam.vscodeintellicode",
-
     // markdownlint
     // https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
     "davidanson.vscode-markdownlint",
-
-    // ESLint
-    // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-    "dbaeumer.vscode-eslint",
 
     // vscode-textlint
     // https://marketplace.visualstudio.com/items?itemName=taichi.vscode-textlint
