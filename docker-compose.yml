@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   zenn:
+    container_name: zenn
     build:
       context: .
       dockerfile: docker/Dockerfile
