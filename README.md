@@ -14,15 +14,15 @@ VSCodeとDocker（devcontainer）で書くZenn執筆環境のボイラープレ�
 
 記事を編集するエディタはVSCode（Visual Studio Code）を使います。Zennの執筆に最適化されたVSCodeの拡張機能やスニペットが入ります。
 
-https://azure.microsoft.com/ja-jp/products/visual-studio-code/
+[Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)
 
 また、Dockerで専用コンテナを準備して環境をつくります。そのため、ローカル環境にDockerのインストールが必要です。特にこだわりが無ければ、GUIで簡単にDockerコンテナを導入できるDocker Desktopが（個人利用であれば）無料で使えて便利です。
 
-https://www.docker.com/products/docker-desktop/
+[Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 VSCodeからコンテナにアクセスして執筆するため、Dev ContainersのVSCode拡張機能も必要です。
 
-https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+[Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 利用にあたって、ローカル環境にVSCodeとDockerが準備されていることを前提としています。
 
@@ -36,13 +36,13 @@ VSCodeで複製したリポジトリをクローンして"Reopen in Container"�
 
 ローカルのエディタでZennの記事が執筆できる `zenn-cli` もインストールされます。Zenn公式が書いている以下の記事を参考に、GitHubリポジトリと連携してください。
 
-[GitHubリポジトリでZennのコンテンツを管理する](https://zenn.dev/zenn/articles/connect-to-github)
+[😸GitHubリポジトリでZennのコンテンツを管理する](https://zenn.dev/zenn/articles/connect-to-github)
 
 ここまでの手順でZennの記事を書き始める準備が整いました。
 
 `zenn-cli` を使った記事の書き方は、Zenn公式が書いている以下の記事に詳しく書かれています。参考にしてください。
 
-[Zenn CLIで記事・本を管理する方法](https://zenn.dev/zenn/articles/zenn-cli-guide)
+[🔨Zenn CLIで記事・本を管理する方法](https://zenn.dev/zenn/articles/zenn-cli-guide)
 
 記事を書く際は、Zennに最適化されたVSCode拡張機能やスニペットを使うと便利です。コミット時に静的解析（lint）がかかります。不正な形式の文章をコミットすると、警告メッセージが表示されてコミットできません。詳しい設定については、それぞれ後述しています。
 
