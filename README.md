@@ -36,13 +36,13 @@ VSCodeで複製したリポジトリをクローンして"Reopen in Container"�
 
 ローカルのエディタでZennの記事が執筆できる `zenn-cli` もインストールされます。Zenn公式が書いている以下の記事を参考に、GitHubリポジトリと連携してください。
 
-[😸GitHubリポジトリでZennのコンテンツを管理する](https://zenn.dev/zenn/articles/connect-to-github)
+[😸 GitHubリポジトリでZennのコンテンツを管理する](https://zenn.dev/zenn/articles/connect-to-github)
 
 ここまでの手順でZennの記事を書き始める準備が整いました。
 
 `zenn-cli` を使った記事の書き方は、Zenn公式が書いている以下の記事に詳しく書かれています。参考にしてください。
 
-[🔨Zenn CLIで記事・本を管理する方法](https://zenn.dev/zenn/articles/zenn-cli-guide)
+[🔨 Zenn CLIで記事・本を管理する方法](https://zenn.dev/zenn/articles/zenn-cli-guide)
 
 記事を書く際は、Zennに最適化されたVSCode拡張機能やスニペットを使うと便利です。コミット時に静的解析（lint）がかかります。不正な形式の文章をコミットすると、警告メッセージが表示されてコミットできません。詳しい設定については、それぞれ後述しています。
 
