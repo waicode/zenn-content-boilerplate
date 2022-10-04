@@ -88,10 +88,12 @@ Zennで使えるマークダウン記法は以下の記事を参考にしてく�
 
 静的解析（lint）はVSCodeの拡張機能も入れているので、問題があればエディタ上で常に確認できます。
 
-* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-* [vscode-textlint](https://marketplace.visualstudio.com/items?itemName=taichi.vscode-textlint)
-* [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+| 拡張機能 | 説明 |
+| ---- | ---- |
+| [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) | VSCodeのエディタ上でマークダウン構造を解析 |
+| [vscode-textlint](https://marketplace.visualstudio.com/items?itemName=taichi.vscode-textlint) | VSCodeのエディタ上でテキストを解析 |
+| [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | VSCodeのエディタ上で英単語の誤字をチェック |
+| [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) | VSCodeでコードフォーマット（自動整形） |
 
 #### コミット時にも確認して不正な形式のマークダウンを警告
 
