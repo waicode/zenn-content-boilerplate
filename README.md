@@ -12,17 +12,11 @@ VSCodeとDocker（devcontainer）で書くZenn執筆環境のボイラープレ�
 
 ## 前提
 
-記事を編集するエディタはVSCode（Visual Studio Code）を使います。Zennの執筆に最適化されたVSCodeの拡張機能やスニペットが入ります。
+記事を編集するエディタはVSCode（[Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)）を使います。Zennの執筆に最適化されたVSCodeの拡張機能やスニペットが入ります。
 
-[Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)
+また、Dockerで専用コンテナを準備して環境をつくります。そのため、ローカル環境にDockerのインストールが必要です。特にこだわりが無ければ、GUIで簡単にDockerコンテナを導入できる[Docker Desktop](https://www.docker.com/products/docker-desktop/)が（個人利用であれば）無料で使えて便利です。
 
-また、Dockerで専用コンテナを準備して環境をつくります。そのため、ローカル環境にDockerのインストールが必要です。特にこだわりが無ければ、GUIで簡単にDockerコンテナを導入できるDocker Desktopが（個人利用であれば）無料で使えて便利です。
-
-[Docker Desktop](https://www.docker.com/products/docker-desktop/)
-
-VSCodeからコンテナにアクセスして執筆するため、Dev ContainersのVSCode拡張機能も必要です。
-
-[Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+VSCodeからコンテナにアクセスして執筆するため、[Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)のVSCode拡張機能も必要です。
 
 利用にあたって、ローカル環境にVSCodeとDockerが準備されていることを前提としています。
 
