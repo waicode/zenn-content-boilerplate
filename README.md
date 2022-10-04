@@ -124,10 +124,10 @@ Zennで使えるマークダウン記法は以下の記事を参考にしてく�
 
 ベースとして以下の2つのプリセットを適用しています。
 
-* [textlint-rule-preset-ja-spacing](https://github.com/textlint-ja/textlint-rule-preset-ja-spacing)
-  * 日本語のスペース有無を決定するtextlintルールプリセット
-* [textlint-rule-preset-ja-technical-writing](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing)
-  * 技術文書向けのtextlintルールプリセット
+| プリセット名 | 説明 |
+| ---- | ---- |
+| [textlint-rule-preset-ja-spacing](https://github.com/textlint-ja/textlint-rule-preset-ja-spacing) | 日本語のスペース有無を決定するtextlintルールプリセット |
+| [textlint-rule-preset-ja-technical-writing](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing) | 技術文書向けのtextlintルールプリセット |
 
 プリセットのままだと厳し過ぎる箇所があるため `.textlintrc` で設定を一部上書きしています。
 
