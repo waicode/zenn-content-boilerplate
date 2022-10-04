@@ -60,39 +60,36 @@ VSCodeで複製したリポジトリをクローンして"Reopen in Container"�
 
 マークダウンの文章を書く効率を上げる目的で以下の拡張機能を入れています。
 
-[Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-
-[Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)
-
-[:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)
-
-[Insert Date String](https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring)
-
-[Copy file name](https://marketplace.visualstudio.com/items?itemName=nemesv.copy-file-name)
-
-[Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+| 拡張機能 | 説明 |
+| ---- | ---- |
+| [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) | ショートカットや便利なコマンドが有効になります。 |
+| [:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense) | 絵文字入力が楽になります。 |
+| [Insert Date String](https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring) | 現在時刻の文字列をショートカットで入力できるようになります。Zennのフォーマットに合わせて `YYYY-MM-DD hh:mm` の形式で入力される設定にしています。|
+| [Copy file name](https://marketplace.visualstudio.com/items?itemName=nemesv.copy-file-name) | ファイル名を右クリックメニューからコピーできるようになります。 |
+| [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) | パスを入力補完してくれます。 |
 
 #### 独自のマークダウン記法はVSCodeスニペットで
 
-`.vscode/markdown.code-snippets` にZenn独自の記法を含むマークダウン記法のスニペットを登録しています。Zennで使えるマークダウン記法は以下の記事を参考にしてください。
+`.vscode/markdown.code-snippets` にZenn独自の記法を含むマークダウン記法のスニペットを登録しています。
 
-[ZennのMarkdown記法一覧](https://zenn.dev/zenn/articles/markdown-guide)
+Zennで使えるマークダウン記法は以下の記事を参考にしてください。
+
+[👩‍💻 ZennのMarkdown記法一覧](https://zenn.dev/zenn/articles/markdown-guide)
 
 ### 静的解析（lint）の設定
 
-マークダウンの構造（`markdownlint`）、文章の内容（`textlint`）、英単語の誤字（`cspell`）についてlintします。また、マークダウンファイル以外はコードフォーマット（自動整形）を `prettier` を使って実施します。マークダウンはmarkdownlintと設定が競合するため、意図的に対象から外しています。
+マークダウンの構造（`markdownlint`）、文章の内容（`textlint`）、英単語の誤字（`cspell`）についてlintします。
+
+また、マークダウンファイル以外はコードフォーマット（自動整形）を `prettier` を使って実施します。マークダウンファイルはmarkdownlintと設定が競合するため、意図的に対象から外しています。
 
 #### VSCodeエディタ上で問題があればリアルタイムで確認
 
 静的解析（lint）はVSCodeの拡張機能も入れているので、問題があればエディタ上で常に確認できます。
 
-[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-
-[vscode-textlint](https://marketplace.visualstudio.com/items?itemName=taichi.vscode-textlint)
-
-[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-
-[Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+* [vscode-textlint](https://marketplace.visualstudio.com/items?itemName=taichi.vscode-textlint)
+* [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 #### コミット時にも確認して不正な形式のマークダウンを警告
 
@@ -104,16 +101,130 @@ VSCodeで複製したリポジトリをクローンして"Reopen in Container"�
 
 ##### markdownlint
 
-記載中です。
+デフォルトの構文チェックは厳しめに設定されています。
+
+そのため  `.vscode/settings.json` と `.markdownlint-cli2.jsonc` で一部ルールを調整しています。
+
+```jsonc
+"markdownlint.config": {
+  "line-length": {
+    // MD013: Adjust the maximum number of characters per sentence
+    "line_length": 150
+  },
+  "no-duplicate-heading": false, // MD024: Allow duplicate heading text
+  "no-trailing-punctuation": false, // MD026: Allow headings with . ,;:
+  "no-inline-html": false, // MD033: Allow HTML description
+  "no-bare-urls": false // MD034: Allow URLs to be written as is
+}
+```
 
 ##### textlint
 
-記載中です。
+ベースとして以下の2つのプリセットを適用しています。
+
+* `[textlint-rule-preset-ja-spacing](https://github.com/textlint-ja/textlint-rule-preset-ja-spacing)`
+  * 日本語のスペース有無を決定するtextlintルールプリセット
+* `[textlint-rule-preset-ja-technical-writing](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing)`
+  * 技術文書向けのtextlintルールプリセット
+
+プリセットのままだと厳し過ぎる箇所があるため `.textlintrc` で設定を一部上書きしています。
+
+```json
+{
+  "plugins": {
+    "@textlint/markdown": {
+      "extensions": [
+        ".md"
+      ]
+    }
+  },
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "prh": {
+      "rulePaths": [
+        "./prh/index.yml"
+      ]
+    },
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        "max": 150
+      },
+      "no-exclamation-question-mark": {
+        "allowFullWidthExclamation": true,
+        "allowFullWidthQuestion": true
+      },
+      "ja-no-successive-word": false,
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": [
+          ":",
+          "："
+        ]
+      },
+      "no-doubled-joshi": {
+        "strict": false,
+        "allow": [
+          "も",
+          "や",
+          "か"
+        ],
+        "separatorCharacters": [
+          ",",
+          "，",
+          "、",
+          ".",
+          "．",
+          "。",
+          "?",
+          "!",
+          "？",
+          "！",
+          "「",
+          "」",
+          "\"",
+          "”",
+          "“"
+        ]
+      }
+    },
+    "preset-ja-spacing": {
+      "ja-space-around-code": {
+        "before": true,
+        "after": true
+      }
+    }
+  }
+}
+```
+
+また、校正用辞書を `/prh/rules` へ追加できるようにしています。初期設定では `/prh/rules/tech.yml` に技術用語の校正辞書をいくつか登録しています。必要に応じて用語を追加してください。
+
+```yml
+meta:
+  - title: 技術用語の固有名詞ルール
+rules:
+  - expected: インターフェース
+    patterns:
+      - インターフェイス
+      - インタフェース
+      - インタフェイス
+    prh: 技術用語
+  - expected: ソフトウェア
+    pattern: ソフトウェアー
+    prh: 技術用語
+  - expected: ハードウェア
+    pattern: ハードウェアー
+    prh: 技術用語
+  - expected: デフォルト
+    pattern: ディフォルト
+    prh: 技術用語
+```
 
 ##### cspell
 
-記載中です。
+許可する言葉は `.cspell.json` の `words` に追加します。対象の文字列にカーソルを合わせてVSCodeのクイックフィックスで登録するのが便利です。
 
 ##### Prettier
 
-記載中です。
+`.prettierignore` に `*.md` 記載して、マークダウンファイルをコードフォーマットの対象外にしています。その他の設定は特に入れていません。自動整形時はデフォルト設定が適用されます。

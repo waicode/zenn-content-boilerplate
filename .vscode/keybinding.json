@@ -1,0 +1,5 @@
+{
+  "key": "shift+cmd+i",
+  "command": "insertDateString.insertDateTime",
+  "when": "editorTextFocus"
+}
