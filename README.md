@@ -38,15 +38,13 @@ VSCodeで複製したリポジトリをクローンして"Reopen in Container"�
 
 [😸 GitHubリポジトリでZennのコンテンツを管理する](https://zenn.dev/zenn/articles/connect-to-github)
 
-ここまでの手順でZennの記事を書き始める準備が整いました。
-
-`zenn-cli` を使った記事の書き方は、Zenn公式が書いている以下の記事に詳しく書かれています。参考にしてください。
+ここまでの手順でZennの記事を書き始める準備が整いました。`zenn-cli` を使った記事の書き方は、Zenn公式が書いている以下の記事に詳しく書かれています。参考にしてください。
 
 [🔨 Zenn CLIで記事・本を管理する方法](https://zenn.dev/zenn/articles/zenn-cli-guide)
 
 記事を書く際は、Zennに最適化されたVSCode拡張機能やスニペットを使うと便利です。また、コミット時に静的解析（lint）がかかります。文章が不正な場合、警告メッセージが表示されてコミットできません。
 
-詳しい設定については、それぞれ後述しています。
+詳しい設定について、後述していきます。
 
 ## 設定内容
 
@@ -78,7 +76,11 @@ Zennで使えるマークダウン記法は以下の記事を参考にしてく�
 
 ### 静的解析（lint）の設定
 
-マークダウンの構造（`markdownlint`）、文章の内容（`textlint`）、英単語の誤字（`cspell`）についてlintします。
+このボイラープレートには、以下についてlintする設定が入っています。
+
+* マークダウンの構造（`markdownlint`）
+* 文章の内容（`textlint`）
+* 英単語の誤字（`cspell`）
 
 また、マークダウンファイル以外はコードフォーマット（自動整形）を `prettier` を使って実施します。マークダウンファイルはmarkdownlintと設定が競合するため、意図的に対象から外しています。
 
@@ -122,9 +124,9 @@ Zennで使えるマークダウン記法は以下の記事を参考にしてく�
 
 ベースとして以下の2つのプリセットを適用しています。
 
-* `[textlint-rule-preset-ja-spacing](https://github.com/textlint-ja/textlint-rule-preset-ja-spacing)`
+* [textlint-rule-preset-ja-spacing](https://github.com/textlint-ja/textlint-rule-preset-ja-spacing)
   * 日本語のスペース有無を決定するtextlintルールプリセット
-* `[textlint-rule-preset-ja-technical-writing](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing)`
+* [textlint-rule-preset-ja-technical-writing](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing)
   * 技術文書向けのtextlintルールプリセット
 
 プリセットのままだと厳し過ぎる箇所があるため `.textlintrc` で設定を一部上書きしています。
