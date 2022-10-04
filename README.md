@@ -60,11 +60,11 @@ VSCodeで複製したリポジトリをクローンして"Reopen in Container"�
 
 | 拡張機能 | 説明 |
 | ---- | ---- |
-| [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) | ショートカットや便利なコマンドが有効になります。 |
-| [:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense) | 絵文字入力が楽になります。 |
-| [Insert Date String](https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring) | 現在時刻の文字列をショートカットで入力できるようになります。Zennのフォーマットに合わせて `YYYY-MM-DD hh:mm` の形式で入力される設定にしています。|
-| [Copy file name](https://marketplace.visualstudio.com/items?itemName=nemesv.copy-file-name) | ファイル名を右クリックメニューからコピーできるようになります。 |
-| [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) | パスを入力補完してくれます。 |
+| [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) | ショートカットや便利なコマンド|
+| [:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense) | 絵文字入力の補助 |
+| [Insert Date String](https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring) | 現在時刻をショートカット入力（Zennの日時フォーマット `YYYY-MM-DD hh:mm` で入力されるよう設定済）|
+| [Copy file name](https://marketplace.visualstudio.com/items?itemName=nemesv.copy-file-name) | ファイル名を右クリックメニューからコピー|
+| [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) | パスを入力補完 |
 
 #### 独自のマークダウン記法はVSCodeスニペットで
 
