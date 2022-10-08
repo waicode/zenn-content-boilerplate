@@ -105,10 +105,7 @@ Zennで使えるマークダウン記法は以下の記事を参考にしてく�
 
 ```jsonc
 "markdownlint.config": {
-  "line-length": {
-    // MD013: Adjust the maximum number of characters per sentence
-    "line_length": 150
-  },
+  "line-length": false, // MD013: Disable the maximum number of characters per sentence
   "no-duplicate-heading": false, // MD024: Allow duplicate heading text
   "no-trailing-punctuation": false, // MD026: Allow headings with . ,;:
   "no-inline-html": false, // MD033: Allow HTML description
