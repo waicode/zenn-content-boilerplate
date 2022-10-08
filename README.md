@@ -1,6 +1,6 @@
 # zenn-content-boilerplate
 
-VSCodeとDocker（devcontainer）で書くZenn執筆環境のボイラープレートです。
+VSCodeとDocker（devcontainer）で書くZenn執筆環境のボイラープレートです。このテンプレートを複製して、すぐに記事を書きはじめることができます。
 
 * Zennの執筆に便利なVSCode拡張機能やスニペットが自動的にインストールされます。
 * VSCodeの見た目はZennのテーマカラーに合わせています。
