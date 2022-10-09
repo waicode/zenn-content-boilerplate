@@ -54,6 +54,8 @@ VSCodeで複製したリポジトリをクローンして"Reopen in Container"�
 
 記事のプレビュー（`npx zenn preview`）や記事の新規作成（`npz zenn new:article`）はnpmスクリプトに登録しています。VSCodeのサイドバーから1クリックで実行できます。
 
+<img width="1512" alt="zenn-content-boilerplate_npm_script_screenshot" src="https://user-images.githubusercontent.com/3455992/194733488-c0ebcde2-bacf-4830-8a81-4a0e84b0d712.png">
+
 #### VSCode拡張機能でマークダウンを効率よく書く
 
 マークダウンの文章を書く効率を上げる目的で以下の拡張機能を入れています。
