@@ -1,5 +1,7 @@
 # zenn-content-boilerplate
 
+<img alt="zenn-content-boilerplate_vscode_screenshot" src="https://user-images.githubusercontent.com/3455992/194731916-7fc4714c-5e56-44c5-8a44-573d0e34608d.png">
+
 VSCodeとDocker（devcontainer）で書く**Zenn執筆環境のボイラープレート**です。このテンプレートを複製すれば、すぐにローカルのPC環境で記事を書きはじめることができます。
 
 * Zennの執筆に便利なVSCode拡張機能やスニペットが自動的にインストールされます。
