@@ -30,6 +30,8 @@ VSCodeからコンテナにアクセスして執筆するため、[Dev Container
 
 VSCodeで複製したリポジトリをクローンして"Reopen in Container"でコンテナを立ち上げます。
 
+![zenn-template_devcontainerの起動](https://user-images.githubusercontent.com/3455992/194732679-36cf9614-210e-4234-94b2-ff4d56508c89.gif)
+
 コンテナを立ち上げると `docker/Dockerfile` の内容に基づきコンテナ環境を構築します。`package.json` に書かれたライブラリがインストールされます。また `devcontainer.json` に書かれた設定によって、VSCode拡張機能がインストールされます。
 
 ローカルのエディタでZennの記事が執筆できる `zenn-cli` もインストールされます。Zenn公式が書いている以下の記事を参考に、GitHubリポジトリと連携してください。
