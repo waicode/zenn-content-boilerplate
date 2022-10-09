@@ -26,6 +26,8 @@ VSCodeからコンテナにアクセスして執筆するため、[Dev Container
 
 まずは右上の"Use this template"をクリックして、このボイラープレートからリポジトリを複製します。
 
+<img alt="zenn-content-boilerplate_use_this_template_screenshot" src="https://user-images.githubusercontent.com/3455992/194732328-5eaaf4b0-b7b4-4369-b8f7-ce526554b818.png">
+
 VSCodeで複製したリポジトリをクローンして"Reopen in Container"でコンテナを立ち上げます。
 
 コンテナを立ち上げると `docker/Dockerfile` の内容に基づきコンテナ環境を構築します。`package.json` に書かれたライブラリがインストールされます。また `devcontainer.json` に書かれた設定によって、VSCode拡張機能がインストールされます。
