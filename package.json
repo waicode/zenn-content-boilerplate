@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "description": "Zenn content boilerplate",
-  "repository": "https://github.com/waicode/zenn-content-boilerplate.git",
-  "author": "waicode",
   "scripts": {
     "preview": "npx zenn preview",
     "article": "npx zenn new:article",
