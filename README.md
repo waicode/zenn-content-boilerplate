@@ -18,19 +18,25 @@ VSCodeとDocker（devcontainer）で書く**Zenn執筆環境のボイラープ�
 
 また、Dockerで専用コンテナを準備して環境をつくります。そのため、ローカル環境にDockerのインストールが必要です。特にこだわりが無ければ、GUIで簡単にDockerコンテナを導入できる[Docker Desktop](https://www.docker.com/products/docker-desktop/)が（個人利用であれば）無料で使えて便利です。
 
-VSCodeからコンテナにアクセスして執筆するため、[Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)のVSCode拡張機能も必要です。
+VSCodeからコンテナにアクセスして執筆するため[Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)のVSCode拡張機能も必要です。
 
 利用にあたって、**ローカル環境にVSCodeとDockerが準備されていること**を前提としています。
 
 ## 使い方
 
-まずは右上の"Use this template"をクリックして、このボイラープレートからリポジトリを複製します。
+まずは右上の **"Use this template"** をクリックして、このボイラープレートからリポジトリを複製します。
 
-<img alt="zenn-content-boilerplate_use_this_template_screenshot" src="https://user-images.githubusercontent.com/3455992/194732328-5eaaf4b0-b7b4-4369-b8f7-ce526554b818.png">
+<div align="center">
+<kbd><img alt="zenn-content-boilerplate_use_this_template_screenshot" src="https://user-images.githubusercontent.com/3455992/194732328-5eaaf4b0-b7b4-4369-b8f7-ce526554b818.png" style="width:80%;"></kbd>
+</div>
 
-VSCodeで複製したリポジトリをクローンして"Reopen in Container"でコンテナを立ち上げます。
+<br />
+
+VSCodeで複製したリポジトリをクローンして **"Reopen in Container"** でコンテナを立ち上げます。
 
 ![zenn-template_devcontainerの起動](https://user-images.githubusercontent.com/3455992/194732679-36cf9614-210e-4234-94b2-ff4d56508c89.gif)
+
+<br />
 
 コンテナを立ち上げると `docker/Dockerfile` の内容に基づきコンテナ環境を構築します。`package.json` に書かれたライブラリがインストールされます。また `devcontainer.json` に書かれた設定によって、VSCode拡張機能がインストールされます。
 
@@ -54,7 +60,11 @@ VSCodeで複製したリポジトリをクローンして"Reopen in Container"�
 
 記事のプレビュー（`npx zenn preview`）や記事の新規作成（`npz zenn new:article`）はnpmスクリプトに登録しています。VSCodeのサイドバーから1クリックで実行できます。
 
-<img width="1512" alt="zenn-content-boilerplate_npm_script_screenshot" src="https://user-images.githubusercontent.com/3455992/194733488-c0ebcde2-bacf-4830-8a81-4a0e84b0d712.png">
+<div align="center">
+<kbd><img width="1512" alt="zenn-content-boilerplate_npm_script_screenshot" src="https://user-images.githubusercontent.com/3455992/194733488-c0ebcde2-bacf-4830-8a81-4a0e84b0d712.png" style="width:80%;"></kbd>
+</div>
+
+<br />
 
 #### VSCode拡張機能でマークダウンを効率よく書く
 
