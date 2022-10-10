@@ -242,6 +242,8 @@ rules:
 
 許可する言葉は `.cspell.json` の `words` に追加します。対象の文字列にカーソルを合わせてVSCodeのクイックフィックスで登録するのが便利です。
 
+![zenn-template_add_cspell](https://user-images.githubusercontent.com/3455992/194875399-0036c51e-bbd2-4bc4-928b-0790ae622b5e.gif)
+
 ##### Prettier
 
 `.prettierignore` に `*.md` 記載して、マークダウンファイルをコードフォーマットの対象外にしています。その他の設定は特に入れていません。自動整形時はデフォルト設定が適用されます。
