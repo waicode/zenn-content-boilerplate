@@ -24,6 +24,7 @@
   "markdownlint.config": {
     "line-length": false, // MD013: Disable the maximum number of characters per sentence
     "no-duplicate-heading": false, // MD024: Allow duplicate heading text
+    "single-h1": false, // MD025: Allow multiple top-level headings in the same document
     "no-trailing-punctuation": false, // MD026: Allow headings with . ,;:
     "no-inline-html": false, // MD033: Allow HTML description
     "no-bare-urls": false // MD034: Allow URLs to be written as is
