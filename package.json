@@ -4,9 +4,9 @@
   "private": true,
   "description": "Zenn content boilerplate",
   "scripts": {
-    "preview": "npx zenn preview",
-    "article": "npx zenn new:article",
-    "book": "npx zenn new:book",
+    "preview": "zenn preview",
+    "article": "zenn new:article",
+    "book": "zenn new:book",
     "update": "yarn add -D zenn-cli@latest",
     "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
     "lint:text": "textlint \"**/*.md\"",
