@@ -8,8 +8,8 @@
     "article": "zenn new:article",
     "book": "zenn new:book",
     "update": "yarn add -D zenn-cli@latest",
-    "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
-    "lint:text": "textlint \"**/*.md\"",
+    "lint:markdown": "markdownlint-cli2 \"articles/*.md\"",
+    "lint:text": "textlint \"articles/*.md\"",
     "lint:prettier": "prettier --ignore-path .prettierignore --check .",
     "lint:cspell": "cspell \"**\" .",
     "prepare": "husky install"
