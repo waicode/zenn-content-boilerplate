@@ -56,7 +56,7 @@ VSCodeで複製したリポジトリをクローンして **"Reopen in Container
 
 ### 書くための設定
 
-#### Zenn CLIのコマンドはnmpスクリプトで
+#### Zenn CLIのコマンドはnpmスクリプトで
 
 記事のプレビュー（`npx zenn preview`）や記事の新規作成（`npx zenn new:article`）はnpmスクリプトに登録しています。VSCodeのサイドバーから1クリックで実行できます。
 
